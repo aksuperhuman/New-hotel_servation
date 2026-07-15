@@ -1,0 +1,182 @@
+/* ===========================
+   VIEW ROOMS PAGE
+=========================== */
+
+.rooms-page{
+    padding:30px;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.page-header h1{
+    color:#1e293b;
+    font-size:34px;
+    font-weight:700;
+}
+
+.add-room{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.add-room:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+
+.search-box{
+    width:350px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    padding:12px 18px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:16px;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.room-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.room-table thead{
+    background:#2563eb;
+    color:white;
+}
+
+.room-table th{
+    padding:18px;
+    font-size:16px;
+    text-align:left;
+}
+
+.room-table td{
+    padding:18px;
+    border-bottom:1px solid #eee;
+}
+
+.room-table tbody tr:hover{
+    background:#f8fbff;
+}
+
+/* ===========================
+   STATUS
+=========================== */
+
+.status{
+    padding:8px 15px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.available{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.booked{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.cleaning{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.edit,
+.delete{
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    border-radius:8px;
+    margin-right:10px;
+    color:white;
+    transition:.3s;
+}
+
+.edit{
+    background:#2563eb;
+}
+
+.edit:hover{
+    background:#1d4ed8;
+}
+
+.delete{
+    background:#ef4444;
+}
+
+.delete:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .page-header{
+        flex-direction:column;
+        gap:20px;
+        align-items:flex-start;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .room-table{
+        display:block;
+        overflow-x:auto;
+    }
+
+}

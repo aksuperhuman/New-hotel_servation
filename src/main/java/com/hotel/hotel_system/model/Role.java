@@ -1,6 +1,6 @@
 package com.hotel.hotel_system.model;
 
-public enum Role {
+public enum  Role {
     ADMIN,
     CUSTOMER
 }
